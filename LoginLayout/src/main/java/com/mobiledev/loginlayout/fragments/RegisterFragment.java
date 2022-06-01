@@ -62,7 +62,7 @@ public class RegisterFragment extends Fragment {
         });
         registerBtn.setOnClickListener(view12 -> {
             int nr = 0;
-            if(!password.getText().equals(cpassword.getText())){
+            if(!password.getText().toString().equals(cpassword.getText().toString())){
                 cpassword.setError("It is not same");
                 ++nr;
             }
